@@ -2,24 +2,24 @@
   <div>
   <NavBar/>
   <LandingPage/>
-  <HomePage/>
+  <AboutUs/>
 </div>
 </template>
 
 <script> 
 import NavBar from './components/NavBar.vue';
 import LandingPage from './components/LandingPage.vue';
-import HomePage from './components/HomePage.vue';
+import AboutUs from './components/AboutUs.vue';
 export default {
   components: {
     NavBar,
     LandingPage,
-    HomePage,
+    AboutUs,
   }
 }
 </script>
 <style>
-.h1,h2{
+h1,h2,p{
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
