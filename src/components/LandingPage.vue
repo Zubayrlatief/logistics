@@ -54,7 +54,7 @@ height: 100vh;
 .img-fluid{
     max-width: 100%;
     width: 100%;
-    max-height: 700px;
+    max-height: 730px;
     height: auto;
 }
 

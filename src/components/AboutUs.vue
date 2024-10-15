@@ -2,7 +2,7 @@
   <div class="Aboutus">
     <div class="container-1">
       <div class="container-2">
-      <h1 class="heading-1">Our history</h1>
+      <h1 class="heading-1">OUR HISTORY</h1>
       <h2 class="heading-2">Dedicated to Consistancy and  </h2>
       <p2 class="paragraph">Our mission is to provide seamless, reliable, and innovative logistics solutions that empower businesses to thrive. By leveraging cutting-edge technology, efficient operations, and a customer-first approach, we aim to deliver exceptional value, ensuring timely and secure transportation of goods. Our commitment is to drive growth, sustainability, and success for our partners in an ever-evolving global marketplace.</p2>
     </div>
@@ -10,12 +10,11 @@
       <div class="wrapper">
         <div class="box-area">
           <div class="box">
-            <img src="https://zubayrlatief.github.io/Images-/KC%20Auto.png" alt="" class="sr">
+            <img src="https://zubayrlatief.github.io/Images-/Untitled%20design%20(4).png" alt="" class="sr">
             <div class="overlay">
-              <h3>KC AUTO</h3>
-              <h5>Jan 2021 - Aug 2021</h5>
-              <p>Started woeking in a mechanic shop
-                in grade 9 to help my mother financially
+              <h3>Automotive </h3>
+              <p>
+                Safe and reliable high tittcket automotive transportation
               </p>
                 </div>
           </div>
@@ -44,7 +43,7 @@
       </div>
     </div>
     <div class="button-bottom">
-      <button class="button"><h1>veiw our maps</h1>
+      <button @click="goToMapsPage" class="button"><h1>view our maps</h1>
       </button>
     </div>
   </div>
@@ -52,7 +51,11 @@
 
 <script>
 export default {
-
+  methods: {
+    goToMapsPage(){
+      this.$router.push('/MapsPage')
+    }
+  }
 }
 </script>
 
@@ -65,7 +68,7 @@ background-color: rgb(14, 14, 27);
   position: absolute;
   padding: 80px;
   left: 10%;
-  font-size: 4rem; /* Makes the text larger */
+  font-size: 3rem; /* Makes the text larger */
   color: yellow; /* Changes the text color to yellow */
   font-weight: bold; /* Makes the text bold for more emphasis */
 }
@@ -93,6 +96,15 @@ background-color: rgb(14, 14, 27);
   justify-content: center;
   align-items: center;
   padding: 60px;
+}
+.button{
+  height: 60px;
+
+  border-radius: 2rem;
+  padding: 10px 20px;
+    background: rgb(236, 236, 32);
+    cursor: pointer;
+    transition: background 0.6s ease;
 }
 .wrapper{
     padding-top: 280px;

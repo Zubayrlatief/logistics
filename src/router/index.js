@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import MapsPage from '@/views/MapsPage.vue'
 const routes = [
+  {
+    path: '/MapsPage',
+    name: 'MapsPage',
+    component: MapsPage,
+  },
 ]
 
 const router = createRouter({
