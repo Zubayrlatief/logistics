@@ -7,10 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
     "leaflet": "^1.9.4",
     "leaflet-routing-machine": "^3.2.12",
+    "mdb-ui-kit": "^8.0.0",
     "register-service-worker": "^1.7.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",

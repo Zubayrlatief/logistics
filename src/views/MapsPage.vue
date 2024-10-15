@@ -1,41 +1,99 @@
 <template>
+  <div class="container">
     
-    <div id="map" style="height: 500px;">
-        <h1>waht we do</h1>
+  <div class="heading d-flex justify-content-center">
+    <h1>  TRUSTED ROUTES</h1>
+  </div>
+    <div class="row">
+      <!-- Map 1: Namibia to Cape Town -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="d-flex justify-content-center">NAMABIA->CAPE TOWN</h2>
+            <div id="map1" class="map-container"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map 2: Botswana to Cape Town -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            
+            <h2 class="d-flex justify-content-center">BOTSWANA->CAPE TOWN</h2>
+            <div id="map2" class="map-container"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map 3: Mozambique to Cape Town -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+
+            <h2 class="d-flex justify-content-center">MOZAMBIQUE->CAPE TOWN</h2>
+            <div id="map3" class="map-container"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </template>
-  
-  <script>
-  import L from 'leaflet';
-  import 'leaflet-routing-machine';
-  import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
-  
-  export default {
-    mounted() {
-      // Initialize the map and center it at a given location (latitude, longitude)
-      const map = L.map('map').setView([40.7128, -74.0060], 13); // Example: New York City
-  
-      // Add OpenStreetMap tiles as the base layer
+  </div>
+</template>
+
+<script>
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
+
+export default {
+  mounted() {
+    // Function to create a map with a line between two points
+    const createMapWithLine = (mapId, startCoords, endCoords) => {
+      const map = L.map(mapId).setView(startCoords, 6); // Set view centered at start coordinates
+
+      // Add the OpenStreetMap tile layer
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
       }).addTo(map);
+
+      // Draw a polyline (simple line) between start and end points
+      const line = L.polyline([startCoords, endCoords], { color: 'blue' }).addTo(map);
+
+      // Fit the map to the polyline bounds
+      map.fitBounds(line.getBounds());
+    };
+
+    // Map 1: Namibia to Cape Town
+    createMapWithLine('map1', [-22.559722, 17.083611], [-33.9249, 18.4241]); // Start: Namibia, End: Cape Town
+
+    // Map 2: Botswana to Cape Town
+    createMapWithLine('map2', [-24.658056, 25.912222], [-33.9249, 18.4241]); // Start: Botswana, End: Cape Town
+
+    // Map 3: Mozambique to Cape Town
+    createMapWithLine('map3', [-25.96553, 32.58322], [-33.9249, 18.4241]); // Start: Mozambique, End: Cape Town
+  },
+};
+</script>
+
+<style>
+.container{
+  padding: 1rem;
+}
+
+.heading{
+  padding-bottom: 3rem;
+}
+.map-container {
+  height: 300px; /* Set height of each map */
+  width: 100%; /* Ensure map takes full card width */
+}
+.col{
+  padding: 50px;
+}
+
+.card-body{
   
-      // Add route with start and end locations
-      L.Routing.control({
-        waypoints: [
-          L.latLng(40.7128, -74.0060), // Start: New York City
-          L.latLng(40.730610, -73.935242), // End: Example destination in NYC
-        ],
-        routeWhileDragging: true, // Allow users to drag and modify the route
-      }).addTo(map);
-    },
-  };
-  </script>
-  
-  <style>
-  #map {
-    height: 500px;
-    width: 100%;
-  }
-  </style>
-  
+  background-color: black;
+}
+.card {
+}
+</style>

@@ -40,6 +40,7 @@ height: 100vh;
 
 .image{
     position: relative;
+    max-width: 100%
 
 }
 .heading{
