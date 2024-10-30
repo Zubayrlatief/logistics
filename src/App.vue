@@ -3,8 +3,8 @@
   <NavBar/>
   <LandingPage/>
   <AboutUs/>
-    <router-view />
-    <FooterPage />
+  <router-view></router-view>
+  <FooterPage/>
 </div>
 </template>
 
@@ -13,8 +13,6 @@ import NavBar from './components/NavBar.vue';
 import LandingPage from './components/LandingPage.vue';
 import AboutUs from './components/AboutUs.vue';
 import FooterPage from './components/FooterPage.vue';
-
-// In your main.js or App.vue
 import 'mdb-ui-kit/css/mdb.min.css'; // Importing the MDB CSS
 import 'mdb-ui-kit'; // Importing the MDB JS
 
@@ -31,7 +29,7 @@ export default {
 #app{
   background-color: rgb(14, 14, 27);
 }
-h1,h2,p{
+h1,h2,p,.text,.text-2{
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;

@@ -2,7 +2,9 @@
   <div class="container">
     
   <div class="heading d-flex justify-content-center">
-    <h1>  TRUSTED ROUTES</h1>
+    <h1 class="heading"> TRUSTED ROUTES</h1>
+    <h4 class="text">We are determined to make logistics safe</h4>
+    <h5 class="text-2">These are our highest ROI routes. Saftey and consistensy is garenteed on these routes with highly expreiences drivers</h5>
   </div>
     <div class="row">
       <!-- Map 1: Namibia to Cape Town -->
@@ -76,11 +78,21 @@ export default {
 
 <style>
 .container{
+   
   padding: 1rem;
 }
-
+.text,.text-2{
+    color: rgb(255, 255, 255);
+    
+    padding: 1rem;
+}
 .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   padding-bottom: 3rem;
+  flex-direction: column;
+  color: yellow;
 }
 .map-container {
   height: 300px; /* Set height of each map */
