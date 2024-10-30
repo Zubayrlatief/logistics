@@ -3,20 +3,8 @@
   <NavBar/>
   <LandingPage/>
   <AboutUs/>
-  <template>
-  <div>
-    <nav>
-      <router-link to="/">Login</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/trackings">Trackings</router-link>
-    </nav>
     <router-view />
-  </div>
-</template>
-
-  <router-view></router-view>
-  
-  <FooterPage/>
+    <FooterPage />
 </div>
 </template>
 

@@ -15,7 +15,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">ROUTES</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#contact">
+          <li class="nav-item"><a class="nav-link" href="/Register">
             <button class="button">Contact us</button>
             </a>
           </li>

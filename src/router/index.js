@@ -26,15 +26,17 @@ const routes = [
   },
 ]
 
-router.beforeEach((to, from, next) => {
-  const isAuthenticated = !!localStorage.getItem('token');
-  if (to.meta.requiresAuth && !isAuthenticated) next({ name: 'Login' });
-  else next();
-});
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  const isAuthenticated = !!localStorage.getItem('token');
+  if (to.meta.requiresAuth && !isAuthenticated) next({ name: 'Login' });
+  else next();
+});
 
 export default router

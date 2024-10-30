@@ -18,7 +18,7 @@
     methods: {
       async register() {
         try {
-          await axios.post('http://localhost:5000/auth/register', { name: this.name, email: this.email, password: this.password });
+          await axios.post('http://localhost:5001/auth/register', { name: this.name, email: this.email, password: this.password });
           this.$router.push({ name: 'Login' });
         } catch (err) {
           this.error = 'Registration failed';
