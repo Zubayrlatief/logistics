@@ -1,8 +1,6 @@
 <template>
   <div>
   <NavBar/>
-  <LandingPage/>
-  <AboutUs/>
   <router-view></router-view>
   <FooterPage/>
 </div>
@@ -10,8 +8,6 @@
 
 <script> 
 import NavBar from './components/NavBar.vue';
-import LandingPage from './components/LandingPage.vue';
-import AboutUs from './components/AboutUs.vue';
 import FooterPage from './components/FooterPage.vue';
 import 'mdb-ui-kit/css/mdb.min.css'; // Importing the MDB CSS
 import 'mdb-ui-kit'; // Importing the MDB JS
@@ -19,8 +15,6 @@ import 'mdb-ui-kit'; // Importing the MDB JS
 export default {
   components: {
     NavBar,
-    LandingPage,
-    AboutUs,
     FooterPage
   }
 }

@@ -3,7 +3,13 @@ import MapsPage from '@/views/MapsPage.vue'
 import LoginView from '../views/LoginView.vue';
 import RegisterView from '../views/RegisterView.vue';
 import TrackingsView from '../views/TrackingsView.vue';
+import LandingPage from '@/views/LandingPage.vue';
 const routes = [
+  {
+    path: '/',
+    name: 'LandingPage',
+    component: LandingPage,
+  },
   {
     path: '/MapsPage',
     name: 'MapsPage',
