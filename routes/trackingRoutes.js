@@ -7,6 +7,6 @@ const { verifyToken } = require('../middlewares/authenticateMiddleware');
 router.post('/', verifyToken, trackingController.createTracking);
 router.patch('/:id', verifyToken, trackingController.updateTrackingStatus);
 router.get('/', verifyToken, trackingController.getTrackings);
-router.delete('trackings/:id', authenticate, trackingController.deleteTracking)
+router.delete('/:id', authenticate, trackingController.deleteTracking)
 
 module.exports = router;
