@@ -15,7 +15,7 @@ exports.createTracking = async (req, res) => {
   const { description, status, location } = req.body;
   const userId = req.user.id;
   try {
-    await Tracking.create({ description, status, location, user_id: userId });
+    await Tracking.create({ description, load, description, status, location, user_id: userId });
     res.status(201).json({ message: 'Tracking created successfully' });
   } catch (error) {
     res.status(500).json({ error: 'Failed to create tracking' });
@@ -42,3 +42,14 @@ exports.getTrackings = async (req, res) => {
     res.status(500).json({ error: 'Failed to retrieve trackings' });
   }
 };
+
+exports.deleteTracking = async (req, res) => {
+  const { id } = req.params; // Retrieve the tracking ID from URL params
+  try {
+    await Tracking.deleteById(id); // Call the model method to delete the tracking
+    res.json({ message: 'Tracking deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to delete tracking' });
+  }
+};
+
