@@ -4,7 +4,7 @@
       <img class="img-fluid" :src="LandingImage"/>
       <h1 class="heading">ZAR<h1 class="heading-1">LOGISTICS</h1></h1>
       <p class="heading-3">Delivering efficient, reliable logistics solutions through innovation<br>Ensuring seamless transportation and supply chain management<br> </p>
-      <button @click="goToRegisterPage" class="button">Register</button>
+      <button @click="goToContactPage" class="button">Recieve a Quotation</button>
     </div> 
     <AboutUs/>
     </div>
@@ -23,7 +23,7 @@ import AboutUs from '@/components/AboutUs.vue';
   },
   mehods: {
     goToRegisterPage(){
-      this.$router.push({ name: 'Register'})
+      this.$router.push({ name: 'ContactPage'})
     }
   }
   }

@@ -47,6 +47,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
 
 export default {
+  components: { name: "MapsPage" },
   mounted() {
     // Function to create a map with a line between two points
     const createMapWithLine = (mapId, startCoords, endCoords) => {

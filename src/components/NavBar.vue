@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#LandingPage">
+      <a class="navbar-brand" href="/">
         <img src="https://zubayrlatief.github.io/capestone-hosted-images/H (1)(2).jpg" alt="Logo" class="logo" />
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -13,10 +13,10 @@
             <a class="nav-link" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">ROUTES</a>
+            <a class="nav-link" href="/MapsPage">ROUTES</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="/Register">
-            <button class="button">Contact us</button>
+            <button class="button">Register</button>
             </a>
           </li>
         </ul>

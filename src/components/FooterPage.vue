@@ -1,6 +1,6 @@
 <template>
     <div>
-      <footer class="text-center text-lg-start p-3">
+      <footer class="text-center text-lg-start p-2">
         <!-- Grid container -->
         <div class="container p-4">
           <!--Grid row-->
@@ -36,7 +36,7 @@
         <!-- Grid container -->
   
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
           © 2020 Copyright:
           <a class="text-body" >ZAE LOGISTICS</a>
         </div>
