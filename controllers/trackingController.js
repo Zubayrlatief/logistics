@@ -12,12 +12,13 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.createTracking = async (req, res) => {
-  const { description, status, location } = req.body;
+  const { description, freightload, destination, location, status } = req.body;
   const userId = req.user.id;
   try {
-    await Tracking.create({ description, load, description, status, location, user_id: userId });
+    await Tracking.create({ description, freightload, destination, location,  status, user_id: userId });
     res.status(201).json({ message: 'Tracking created successfully' });
   } catch (error) {
+    console.error('Error in createTracking:', error);
     res.status(500).json({ error: 'Failed to create tracking' });
   }
 };
@@ -52,4 +53,3 @@ exports.deleteTracking = async (req, res) => {
     res.status(500).json({ error: 'Failed to delete tracking' });
   }
 };
-

@@ -4,8 +4,8 @@ const db = require('../config/db');
 const Tracking = {
   create: (tracking) => 
     db.query(
-      'INSERT INTO trackings (Description, load, destination, location, user_id) VALUES (?, ?, ?, ?, ?)', 
-      [tracking.description, tracking.load, tracking.destination, tracking.location, tracking.user_id]
+      'INSERT INTO trackings (Description, freightload, destination, location, user_id, status) VALUES (?, ?, ?, ?, ?, ?)', 
+      [tracking.description, tracking.freightload, tracking.destination, tracking.location, tracking.user_id, tracking.status]
     ),
   
   updateStatus: (id, status) => 
