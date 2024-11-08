@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="button-bottom">
-      <button @click="goToMapsPage" class="button"><h1>View Our Maps</h1></button>
+      <button @click="goToMapsPage" class="button"><h1>VIEW OUR ROUTES</h1></button>
     </div>
   </div>
 </template>
@@ -118,8 +118,8 @@ export default {
 
 .button {
   height: 60px;
-  border-radius: 2rem;
-  padding: 10px 20px;
+  border-radius: 1.5rem;
+  padding: 8px 10px;
   background: rgb(236, 236, 32);
   cursor: pointer;
   transition: background 0.6s ease;

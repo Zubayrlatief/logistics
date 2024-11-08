@@ -7,24 +7,27 @@
       <button @click="goToContactPage" class="button">Recieve a Quotation</button>
     </div> 
     <AboutUs/>
+    <FooterPage/>
     </div>
   </template>
   
   <script>
 import AboutUs from '@/components/AboutUs.vue';
+import FooterPage from '@/components/FooterPage.vue';
   export default {
     components: {
-        AboutUs
+        AboutUs,
+        FooterPage
     },
   data (){
       return{
           LandingImage: "https://zubayrlatief.github.io/Images-/truck.png"
       };
   },
-  mehods: {
-    goToRegisterPage(){
+  methods: {
+    goToContactPage(){
       this.$router.push({ name: 'ContactPage'})
-    }
+    },
   }
   }
   </script>

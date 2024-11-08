@@ -4,6 +4,7 @@ import LoginView from '../views/LoginView.vue';
 import RegisterView from '../views/RegisterView.vue';
 import TrackingsView from '../views/TrackingsView.vue';
 import LandingPage from '@/views/LandingPage.vue';
+import ContactPage from '@/views/ContactPage.vue';
 const routes = [
   {
     path: '/',
@@ -30,7 +31,13 @@ const routes = [
     name: 'Trackings',
     component: TrackingsView,
   },
+  {
+  path: '/ContactPage',
+  name: 'ContactPage',
+  component: ContactPage,
+  }
 ]
+
 
 
 
