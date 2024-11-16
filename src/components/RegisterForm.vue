@@ -1,5 +1,6 @@
 <template>
-  <div class="register-page">
+  <div class="heading"><h1>REGISTER TO TRACK YOUR TRUCKS</h1></div>
+  <div class="register-page"> 
     <form class="register-form" @submit.prevent="register">
       <input v-model="name" placeholder="Name" required />
       <input v-model="email" placeholder="Email" type="email" required />
@@ -35,17 +36,18 @@ export default {
 </script>
 
 <style scoped>
+.heading{
+  padding-top: 70px;
+}
 .register-page {
   background-color: rgb(14, 14, 27);
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .register-form {
-  
-
   background-color: rgb(14, 14, 27);
   padding: 20px;
   border-radius: 8px;

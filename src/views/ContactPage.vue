@@ -39,16 +39,12 @@
   </script>
   
   <style scoped>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
   body {
     background-color: rgb(14, 14, 27);
     color: yellow;
+    font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .contact-container {
@@ -58,8 +54,11 @@
     padding: 20px;
     border-radius: 8px;
     background-color: rgb(14, 14, 27);
-    color: yellow;
+    color: rgb(228, 228, 217);
     margin: auto;
+    font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .contact-container h1 {
@@ -75,14 +74,14 @@
   
   .contact-form label {
     margin-top: 15px;
-    color: yellow;
+    color: rgb(218, 218, 209);
   }
   
   .contact-form input,
   .contact-form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid yellow;
+    border: 1px solid rgb(201, 201, 192);
     border-radius: 4px;
     background-color: rgb(14, 14, 27);
     color: yellow;
