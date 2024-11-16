@@ -24,10 +24,10 @@ import FooterPage from '@/components/FooterPage.vue';
           LandingImage: "https://zubayrlatief.github.io/Images-/truck.png"
       };
   },
-  mehods: {
-    goToRegisterPage(){
+  methods: {
+    goToContactPage(){
       this.$router.push({ name: 'ContactPage'})
-    }
+    },
   }
   }
   </script>

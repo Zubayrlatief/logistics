@@ -49,7 +49,9 @@
   </script>
   
   <style scoped>
-  .text-center{background-color: rgb(14, 14, 27);}
+  .text-center{
+    background-color: rgb(14, 14, 27);
+  }
   /* Change heading to pure white */
   h5 {
     color: #eaff00;
