@@ -23,7 +23,7 @@ export default {
 #app{
   background-color: rgb(14, 14, 27);
 }
-h1,h2,p,.text,.text-2{
+h1,h2,p,h5,.text,.text-2{
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;

@@ -3,12 +3,10 @@
     <div class="container-1">
       <div class="container-2">
         <h1 class="heading-1">OUR MISSION</h1>
-        <div class="text-container">
-          <h2 class="heading-2">Dedicated Reliability & Consistency</h2>
           <div class="paragraph-box">
-            <p>
-              Our mission is to provide seamless, reliable, and innovative logistics solutions that empower businesses to thrive. By leveraging cutting-edge technology, efficient operations, and a customer-first approach, we aim to deliver exceptional value, ensuring timely and secure transportation of goods. Our commitment is to drive growth, sustainability, and success for our partners in an ever-evolving global marketplace.
-            </p>
+            <h5 class="h5">
+              PROVIDE SEAMLESS, RELIABLE, AND INNOVATIVE LOGISTICS SOLUTIONS THAT EMPOWER BUSINESSES TO THRIVE. <br/> LEVERAGING CUTTING-EDGE TECHNOLOGY, EFFICIENT OPERATIONS, AND A CUSTOMER-FIRST APPROACH, WE AIM TO DELIVER EXCEPTIONAL VALUE, ENSURING TIMELY AND SECURE TRANSPORTATION OF GOODS. <br/> OUR COMMITMENT IS TO DRIVE GROWTH, SUSTAINABILITY, AND SUCCESS FOR OUR PARTNERS IN AN EVER-EVOLVING GLOBAL MARKETPLACE.
+            </h5>
           </div>
         </div>
       </div>
@@ -50,7 +48,6 @@
     <div class="button-bottom">
       <button @click="goToMapsPage" class="button"><h1>View Our Maps</h1></button>
     </div>
-  </div>
 </template>
 
 <script>
@@ -84,14 +81,23 @@ export default {
 
 }
 .paragraph-box {
-  background-color: rgb(14, 14, 24);; /* Slightly transparent white */
-  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 14, 24);;
   border-radius: 8px;
   color: white;
-  max-width: 500px;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
+.h5{ display: flex;
+text-align: center;
 
+}
 
 .heading-2 {
   color: white;
@@ -114,6 +120,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 60px;
+  background-color: rgb(14, 14, 27);
 }
 
 .button {
@@ -199,53 +206,74 @@ p {
 }
 
 @media (max-width: 768px) {
+  /* Adjust heading and paragraph styles */
   .heading-1 {
     font-size: 2.5rem;
-    left: 5%;
+    text-align: center;
+    padding: 40px;
   }
 
-  .heading-2 {
-    left: 40%;
+  .paragraph-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
   }
 
-  .paragraph {
-    left: 15%;
-    padding: 50px;
+  .h5 {
     font-size: 0.9rem;
+    line-height: 1.5;
   }
 
-  .button-bottom {
-    padding: 30px;
+  /* Adjust button styles */
+  .button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    height: 50px;
   }
 
+  /* Ensure boxes display fully */
   .box-area {
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 15px;
+  }
+
+  .box img {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  /* Further reduce heading and paragraph size */
   .heading-1 {
     font-size: 2rem;
-    left: 0;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
   }
 
-  .heading-2 {
-    left: 0;
-    text-align: center;
-    padding: 20px;
+  .paragraph-box {
+    padding-top: 20px;
   }
 
-  .paragraph {
-    left: 0;
-    padding: 20px;
-    font-size: 0.8rem;
-  }
-
-  .button {
-    width: 100%;
+  .h5 {
     font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Adjust button for smaller screens */
+  .button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    height: 40px;
+  }
+
+  /* Ensure boxes fit in smaller screens */
+  .box-area {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .box img {
+    width: 100%;
   }
 }
 
