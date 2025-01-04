@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="https://zubayrlatief.github.io/capestone-hosted-images/H (1)(2).jpg" alt="Logo" class="logo" />
+        <img src="https://iili.io/2UxicCB.md.png" alt="Logo" class="logo" />
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -40,7 +40,8 @@ export default {
 }
 
 .logo {
-  height: 40px; /* Adjust logo size */
+  height: 60px; /* Adjust logo size */
+  margin-left: 20%;
 }
 
 .navbar-nav{

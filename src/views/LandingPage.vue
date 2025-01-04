@@ -58,7 +58,7 @@ import FooterPage from '@/components/FooterPage.vue';
   .heading{
       flex: 0 0 auto;
       margin-right: 20px;
-      color: white;
+      color: lightgray;
   }
   
   .heading-1{
